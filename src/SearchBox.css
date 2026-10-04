@@ -1,0 +1,120 @@
+      * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(circle at top left, #70483d, transparent 35%),
+        radial-gradient(circle at bottom right, #5b3830, transparent 35%),
+        #2B1B17;
+
+    min-height: 100vh;
+}
+
+.search-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+
+/* Heading */
+
+.search-container h1 {
+    color: #FFF8F0;
+    font-size: 40px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* Search */
+
+.search-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.search-form .MuiOutlinedInput-root {
+    background: #FFF8F0;
+    border-radius: 12px;
+}
+
+.search-form button {
+    height: 56px;
+    padding: 0 28px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #E07A5F,
+        #C8553D
+    );
+
+    font-weight: bold;
+
+    box-shadow: 0 8px 20px rgba(224, 122, 95, 0.3);
+
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    background: linear-gradient(
+        135deg,
+        #F08A6D,
+        #D45E43
+    );
+
+    transform: translateY(-2px);
+}
+
+/* Error */
+
+.error {
+    color: #8B2635;
+
+    background: #FFE4DE;
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+}
+
+/* Heading Weather Information */
+
+.search-container h2 {
+    color: #F2CC8F;
+    margin-top: 20px;
+}
+.search-form .MuiOutlinedInput-notchedOutline {
+    border-color: #E8CDBA !important;
+}
+
+.search-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #E07A5F !important;
+    border-width: 1px !important;
+    box-shadow: none !important;
+}
+.search-form .MuiFormLabel-asterisk {
+    color: #8B5E4B !important;
+}
+.search-form .MuiInputLabel-root {
+    color: #8B5E4B !important;
+}
+
+.search-form .MuiInputLabel-root.Mui-focused {
+    color: #8B5E4B !important;
+}
+
+.search-form .MuiOutlinedInput-input {
+    color: #4A3029 !important;
+}
